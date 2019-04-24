@@ -13,3 +13,21 @@ export default class Matrix extends Component {
     return <div id="matrix">{this.genMatrix()}</div>;
   }
 }
+
+Matrix.defaultProps = {
+  values: (() => {
+    const myRow = [
+      "#F00",
+      "#F00",
+      "#F00",
+      "#F00",
+      "#F00",
+      "#F00",
+      "#F00",
+      "#F00",
+      "#F00",
+      "#F00"
+    ];
+    return new Array(10).fill(myRow);
+  })()
+};
