@@ -5,14 +5,22 @@ export default class Cell extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      color: props
+      color: this.props.value
     }
+  }
+
+  changeBack = () => {
+    this.setState({
+      color: '#333'
+    })
   }
 
   render() {
     return (
-      <div id="matrix">
-        {this.genMatrix()}
+      <div
+        className="cell"
+        style={{backgroundColor: this.state.color}}
+        onClick={this.changeBack}>
       </div>
     )
   }
