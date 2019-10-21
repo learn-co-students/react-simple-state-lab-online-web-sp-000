@@ -23,7 +23,7 @@ export default class Matrix extends Component {
 
 Matrix.defaultProps = {
   values: (() => {
-    const matrixRow = ['#FOO', '#FOO', '#FOO', '#FOO', '#FOO', '#FOO', '#FOO','#FOO','#FOO','#FOO']
+    const matrixRow = ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00','#F00','#F00','#F00']
     return (new Array(10).fill(matrixRow))
   })()
 }
