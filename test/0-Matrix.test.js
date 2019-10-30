@@ -22,6 +22,7 @@ describe('<Matrix />', () => {
   }
   
   it("uses a default 'values' prop of an array with 10 items", () => {
+    console.log("defRows is: ", defRows)
     expect(defRows.length).to.equal(10)
   })
   
