@@ -9,9 +9,8 @@ export class Cell extends Component {
   }
 
   changeColor = () => {
-    const newColor = '#333'
     this.setState({
-      color: newColor
+      color: '#333'
     })
   }
 
