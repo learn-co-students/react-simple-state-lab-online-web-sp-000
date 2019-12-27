@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "mocha-multi": "^1.1.3",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-scripts": "1.1.4",
     "webpack": "^3.11.0"
   },
@@ -34,5 +34,20 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "mocha": "^6.2.1",
     "sinon": "^7.5.0"
-  }
+  },
+  "description": "## Objectives",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leerivera/react-simple-state-lab-online-web-sp-000.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leerivera/react-simple-state-lab-online-web-sp-000/issues"
+  },
+  "homepage": "https://github.com/leerivera/react-simple-state-lab-online-web-sp-000#readme"
 }
