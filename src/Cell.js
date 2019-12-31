@@ -1,15 +1,29 @@
-import React { Component } from 'react';
+import React, { Component } from 'react';
 
 export default class Cell extends Component {
 
-  constructor () {
-    super()
-    this.state = {}
-  }
+   constructor (props) {
+      super()
+      this.state = {
+         color: props.value
+      }
+   }
 
-  render() {
-    return (
-      <div className="cell"></div>
-    )
-  }
+   clickHandler = (event) => {
+      console.log("click heard.")
+      this.setState({
+         color: '#333'
+      })
+   }
+
+   render() {
+      return (
+         <div
+            className="cell"
+            onClick={this.clickHandler}
+            style={{backgroundColor: this.state.color}}>
+         </div>
+      )
+   }
+
 }
