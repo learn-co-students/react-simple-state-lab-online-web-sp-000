@@ -23,6 +23,7 @@ export default class Matrix extends Component {
 
 
 Matrix.defaultProps = {
+   // values gets passed in to this.props.values when parent doesnt add anything
    values: [
      ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00'],
      ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00'],
