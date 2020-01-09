@@ -62,7 +62,7 @@ describe('<Cell />', () => {
     expect(cellWhite.props().style.backgroundColor).to.equal('#fff')
     cellWhite.setState({ color: '#0f0' })
     expect(cellWhite.props().style.backgroundColor).to.equal('#0f0')
-  })
+  // })
   
 
 })
