@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Matrix from './Matrix';
 
 export default class Cell extends Component {
     constructor(props) {
@@ -20,10 +19,10 @@ export default class Cell extends Component {
         <div
             className="cell"
             style={{backgroundColor: this.state.color}}
-            onClick={this.changeColor}
-            // onClick={() => this.setState({ color: '#333'})}
-            >
+            onClick={this.changeColor}>
         </div>
         )
     }
 }
+
+// onClick={() => this.setState({ color: '#333'})}
