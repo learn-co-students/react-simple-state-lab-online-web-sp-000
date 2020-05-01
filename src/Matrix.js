@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Cell from './Cell.js' //This line enables the app to work in the browser. So it seems that the child gets imported into the parent.
+import Cell from './Cell.js' //This line enables the app to work in the browser. So it seems that the CHILD gets imported into the PARENT.
 
 export default class Matrix extends Component {
 

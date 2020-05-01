@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import Matrix from './Matrix'  WRONG; Matrix is the parent. Cell is the child. Therefore Matrix inherits Cell, rather than vice cersa.
+//import Matrix from './Matrix'  WRONG; Matrix is the parent. Cell is the child. Therefore Matrix receives Cell, rather than vice cersa.  The CHILD gets imported into the PARENT.
 
 export default class Cell extends Component {
 
