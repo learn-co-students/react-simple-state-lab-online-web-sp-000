@@ -9,7 +9,7 @@ constructor() {
 }
 
 handleClick = () => {
-{this.value}
+{this.state.color}
 }
 
 
