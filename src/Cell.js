@@ -1,27 +1,32 @@
-import React from 'react';
+import React, {Component} from 'react';
+import { throws } from 'assert';
 
-class Cells extends component {
-constructor() {
+export default class Cell extends Component {
+constructor(props) {
     super()
     this.state = {
-       color:value 
-    }
+         color: props.value 
+        }
+        //
 }
 
 handleClick = () => {
-{this.state.color}
+{this.setState(
+    {color:"#333"}
+)}
 }
+
 
 
 
 
 render() {
   return (
-    <div onClick = {this.handleClick} className="cell" style={this.state}>
+    <div onClick = {this.handleClick} className="cell" style={{backgroundColor: this.state.color}}/>
     
     
    
-    </div>
+    
     )
 
     }

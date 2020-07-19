@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Cell from "./Cell"
 
 export default class Matrix extends Component {
   
@@ -23,5 +24,11 @@ export default class Matrix extends Component {
 }
 
 Matrix.defaultProps ={
-   values:['#F00', '#00F', '#F00', '#00F', '#F00', '#00F', '#F00', '#00F', '#F00', '#00F']
+   values: (() => {
+     const array =   ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00']
+     return (
+       new Array(10).fill(array))
+   
+   })()
 }
+//The fill() method changes all elements in an array to a static value, from a start index (default 0) to an end index (default array.length). It returns the modified array.
