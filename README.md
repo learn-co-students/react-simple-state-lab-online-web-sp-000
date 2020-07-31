@@ -22,8 +22,9 @@ Let's take some time to understand the code base. First, open up the `index.js` 
 
 Now let's look at `Matrix.js`. The `render()` method shows us what our `Matrix` component looks like: a `<div>` tag with `id=matrix`. But inside that div, we invoke `this.genMatrix()`. We see that `genMatrix` is an instance method which maps `this.props.values` to an array of JSX. Basically, every 'row' in `this.props.values` will create a `<div className="row">`. Furthermore,
 if we look at `genRow`, we'll see that every row will map through its `vals` to create an array of `<div className="cell">` JSX.
- 
+
 In the end, the following HTML is generated (You can run this lab and use Chrome's developer tools to check for yourself):
+
 ```html
 <div id="root">
   <div id="matrix">
@@ -58,7 +59,7 @@ case no `values` prop is passed.
    the values '#F00' (red). For inspiration, take a look at `src/data.js`.
 2. Once you have made your `Cell` component, replace the return value in
    `genRow`'s map to: `<Cell value={val} />`. Here we are specifying our `Cell`
-   component should have a `value` prop. 
+   component should have a `value` prop.
 
 ### `Cell`
 
