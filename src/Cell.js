@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 export default class Cell extends Component {
     constructor(props) {
-        console.log(props.color)
+        console.log(props.value)
         super()
-        this.state = {color: props.color}
+        this.state = {color: props.value}
     }
     updateColor = () => { 
         this.setState({color: '#333'})
