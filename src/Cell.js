@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 
 export default class Cell extends Component {
   
-    constructor(value) {
+    constructor(props) {
         super()
+        console.log('constructor', props)
         this.state = {
-            color: value
+            color: props.value
         } // ...define initial state with a key of 'color' set to the 'value' prop
       }
   
@@ -20,7 +21,7 @@ export default class Cell extends Component {
   render() {
     return (
         
-      <div className="cell" onClick={this.newColor} style={{backgroundColor: `${this.state.color}`}}>
+      <div className= "cell" onClick={this.newColor} style={{backgroundColor: `${this.state.color}`}}>
       {console.log('rendering Cell', this.state.color)}
       </div>
     )
