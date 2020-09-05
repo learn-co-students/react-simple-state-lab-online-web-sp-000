@@ -3,7 +3,7 @@ import Cell from './Cell.js';
 
 export default class Matrix extends Component {
   
-  genRow = (vals) => vals.map(val => <Cell value={val} />);
+  genRow = (vals) => vals.map(val => <Cell value={vals} />);
   genMatrix = () => this.props.values.map(rowVals => <div className="row">{this.genRow(rowVals)}</div>);
 
   render() {
@@ -16,4 +16,4 @@ export default class Matrix extends Component {
   
 }
 
-Matrix.defaultProps = { values: Array(10).fill(Array(10).fill(`F00`)) }
+Matrix.defaultProps = { values: new Array(10).fill(new Array(10).fill(`#F00`)) }
