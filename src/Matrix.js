@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Cell from './cell';
 
 export default class Matrix extends Component {
+
+  // #F00 is red
+  // #00F is blue
   
   genRow = (vals) => {
     // console.log(vals)
@@ -10,14 +13,18 @@ export default class Matrix extends Component {
     // cell is a component from cell.js, when the div is created it is adding the color to the div
     // <Cell value={val} />
 
+    // a div is created with a className of 'cell'
+
     return vals.map(val => <div className="cell"> <Cell value={val}/> </div>) // replace me and render a cell component instead!
   }
   
   // genMatrix is an instance method
   genMatrix = () => 
   {
-    // console.log(this.props.values)
+    console.log(this.props.values)
     // this.props.value is an array of 10 arrays with 10 colors within each array
+
+    // a div is created with a className of row
     return this.props.values.map(rowVals => <div className="row"> {this.genRow(rowVals)} </div>)
     
   }
