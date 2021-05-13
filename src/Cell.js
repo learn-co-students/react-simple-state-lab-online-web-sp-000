@@ -14,6 +14,6 @@ export default class Cell extends Component{
         })
     }
     render(){
-        return <div name= "cell" style={{backgroundColor: this.state.value}} onClick={this.handleClick}></div>
+        return <div className= "cell" style={{backgroundColor: this.state.color}} onClick={this.handleClick}></div>
     }
 }
