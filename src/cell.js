@@ -3,10 +3,9 @@ import React, { Component } from 'react';
 export default class Cell extends Component {
 
 	constructor(props){
-		console.log(props)
 		super()
 		this.state = {
-			color: props.value
+			color: props.value // this is the value that's been passed down via props from it's parent: Matrix
 		}
 	}
 
