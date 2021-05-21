@@ -7,7 +7,7 @@ export default class Cell extends Component {
     }
 
     handleClick = () => {
-        this.setState({color: '#333'})
+        this.setState({ color: '#333' })
 
         // Better functionality to switch back and load from original prop value
         // this.state.color !== '#333' ?
@@ -18,8 +18,8 @@ export default class Cell extends Component {
         return (
             <div
                 className='cell'
-                style={{backgroundColor: this.state.color}}
-                onClick={this.handleClick}
+                style={{ backgroundColor: this.state.color }}
+                onClick={ this.handleClick }
             />
         )
     }
